@@ -239,7 +239,7 @@ object Huffman {
    * the code table `table`.
    */
   def codeBits(table: CodeTable)(char: Char): List[Bit] = table match {
-    case Nil => throw new NoSuchElementException(char + " cannot be found")
+    case Nil => throw new NoSuchElementException(s"$char cannot be found")
     case (character, bits) :: _ => if (character == char) bits else codeBits(table.tail)(char)
   }
 
