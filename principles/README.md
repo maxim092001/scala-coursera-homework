@@ -3,25 +3,25 @@ Homework from Scala course "Functional Programming Principles in Scala" by Marti
 
 # Recfun
 
-  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/recfun)
-  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/recfun/src/main/scala/recfun/RecFun.scala)
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/principles/recfun)
+  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/principles/recfun/src/main/scala/recfun/RecFun.scala)
 
 # FunSets
 
-  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/funsets)
-  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/funsets/src/funsets/FunSets.scala) 
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/principles/funsets)
+  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/principles/funsets/src/funsets/FunSets.scala) 
     
 # ObjSets
 
-  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/objsets)
-  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/objsets/src/objsets/TweetSet.scala) 
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/principles/objsets)
+  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/principles/objsets/src/objsets/TweetSet.scala) 
 
 # Huffman
 
-  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/patmat)
-  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/patmat/src/patmat/Huffman.scala)
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/principles/patmat)
+  * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/blob/master/principles/patmat/src/patmat/Huffman.scala)
 
 # Anagrams
-  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/forcomp) 
-  * [Solution](https://github.com/maxim092001/Scala-Courcera-Homework/blob/master/patmat/src/forcomp/Anagrams.scala)
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/principles/forcomp) 
+  * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/blob/master/principles/forcomp/src/main/scala/forcomp/Anagrams.scala)
 
