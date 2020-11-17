@@ -1,5 +1,5 @@
 ### Scala-Courcera-Homework
-Homework from Scala course "Functional Programming Principles in Scala" by Martin Odersky
+Homework from Scala course "Functional Programming Design in Scala" by Martin Odersky
 
 # QuickCheck
 
