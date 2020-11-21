@@ -15,3 +15,8 @@ Homework from Scala course "Functional Programming Design in Scala" by Martin Od
 
   * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/design/codecs)
   * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/blob/master/design/codecs/src/main/scala/codecs/codecs.scala)
+
+# Calculator
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/design/calculator)
+  * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/blob/master/design/calculator/src/main/scala/calculator)
+
