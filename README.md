@@ -5,3 +5,5 @@ Homework from Coursera specialization "Functional Programming in Scala Specializ
 
 # [Functional Program Design in Scala](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/design)
 
+# [Parallel Programming in Scala](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/parallel)
+
