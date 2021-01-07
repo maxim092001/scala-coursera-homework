@@ -13,6 +13,7 @@ We will use the parallel construct, defined in the package common, as in the lec
 
 ### Parallel Counting Change
 
+
 If you took the course Functional Programming in Scala, you surely recall the assignment in which you had to count the number of ways in which you can make the change for a given amount of money. The text of that assignment was as follows:
 
 *Write a recursive function that counts how many different ways you can make change for an amount, given a list of coin denominations. For example, there are 3 ways to give change for 4 if you have coins with denomination 1 and 2: 1+1+1+1, 1+1+2, 2+2.*
