@@ -10,3 +10,8 @@ Homework from Scala course "Parallel programming" by Martin Odersky
 
   * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/parallel/reductions)
   * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/parallel/reductions/src/main/)
+
+# K-Means
+
+  * [Problem](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/parallel/kmeans)
+  * [Solution](https://github.com/maxim092001/Scala-Coursera-Homework/tree/master/parallel/kmeans/src/main/scala/kmeans)
