@@ -76,6 +76,8 @@ In the first part of this assignment, you will classify the input points accordi
 class Point(val x: Double, val y: Double, val z: Double)
 ```
 
+You will start by implementing the classify method:
+
 ```scala
 def classify(points: Seq[Point], means: Seq[Point]): Map[Point, Seq[Point]]
 def classify(points: ParSeq[Point], means: ParSeq[Point]): ParMap[Point, ParSeq[Point]]
