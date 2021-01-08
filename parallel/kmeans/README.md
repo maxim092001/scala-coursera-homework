@@ -67,3 +67,78 @@ K-means is an example of a bulk synchronous parallel algorithm (BSP). BSP algori
 * barrier synchronisation, during which processes wait until every process finishes
 
 Data-parallel programming models are typically a good fit for BSP algorithms, as each bulk synchronous phase can correspond to some number of data-parallel operations.
+
+### Classifying the points
+
+In the first part of this assignment, you will classify the input points according to the square distance to the means. Input points are described with the following Point data-type:
+
+```scala
+class Point(val x: Double, val y: Double, val z: Double)
+```
+
+```scala
+def classify(points: Seq[Point], means: Seq[Point]): Map[Point, Seq[Point]]
+def classify(points: ParSeq[Point], means: ParSeq[Point]): ParMap[Point, ParSeq[Point]]
+```
+
+There are two overloads of this method. The first one works with sequential collections, whereas the second one works with parallel collections.
+
+These two methods take a sequence of points and a sequence of means, and return a map collection, which maps each mean to the sequence of points in the corresponding cluster.
+
+Note that the generic collection types introduced in the lectures (e.g., GenSeq, GenMap) do not exist anymore in the last version of the Scala standard library. Consequently, it is not anymore possible to write algorithms that are agnostic about parallelism. However, both parallel and sequential collections have a similar API. This means that once you have implemented one overload of classify, the other one can be implemented by copy-pasting the first implementation.
+
+Hint: Use groupBy and the findClosest method, which is already defined for you. After that, make sure that all the means are in the resulting map, even if their sequences are empty.
+
+### Updating the means
+
+In the second part of this assignment, you will update the means corresponding to different clusters.
+
+Implement the method update, which takes the map of classified points produced in the previous step, and the sequence of previous means. The method returns the new sequence of means:
+
+
+```scala
+def update(classified: ParMap[Point, ParSeq[Point]], oldMeans: ParSeq[Point]): ParSeq[Point]
+```
+
+Once more, there are two overloads of the method, one working with sequential collections, and the other working with parallel collections.
+
+Take care to preserve order in the resulting sequence -- the mean i in the resulting sequence must correspond to the mean i from oldMeans.
+
+Hint: Make sure you use the findAverage method that is predefined for you.
+
+### Detecting convergence
+
+Finally, you will implement convergence detection. The convergence detection method takes a sequence of old means and the sequence of updated means, and returns a boolean indicating if the algorithm converged or not. Given an eta parameter, oldMeans and newMeans, it returns true if the algorithm converged, and false otherwise:
+
+
+```scala
+def converged(eta: Double, oldMeans: ParSeq[Point], newMeans: ParSeq[Point])
+```
+
+The algorithm converged iff the square distance between the old and the new mean is less than or equal to eta, for all means.
+
+Note: the means in the two lists are ordered -- the mean at i in oldMeans is the previous value of the mean at i in newMeans.
+
+Implement converged!
+
+### Running the algorithm
+
+We now have everything we need to run the K-means algorithm. We only need to combine the previously defined methods in the right way.
+
+The tail-recursive kMeans method takes a sequence of points points, previously computed sequence of means means, and the eta value:
+
+```scala
+@tailrec final def kMeans(points: Seq[Point], means: Seq[Point], eta: Double): Seq[Point]
+@tailrec final def kMeans(points: ParSeq[Point], means: ParSeq[Point], eta: Double): ParSeq[Point]
+```
+
+The kMeans method should return the sequence of means, each corresponding to a specific cluster.
+
+Hint: kMeans implements the steps 2-4 from the K-means pseudocode.
+
+Run the algorithm and report the speedup:
+
+```
+> runMain kmeans.KMeansRunner
+```
+
